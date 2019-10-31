@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.day.eurekaprovider.ren.mapper.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.day.eurekaprovider.ren.model.User" >
+    <constructor >
+      <idArg column="u_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="u_name" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="u_sex" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="u_wei" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="u_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="u_care" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="u_uncare" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    u_id, u_name, u_sex, u_wei, u_time, u_care, u_uncare
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from user
+    where u_id = #{uId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from user
+    where u_id = #{uId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.day.eurekaprovider.ren.model.User" >
+    insert into user (u_id, u_name, u_sex, 
+      u_wei, u_time, u_care, 
+      u_uncare)
+    values (#{uId,jdbcType=INTEGER}, #{uName,jdbcType=VARCHAR}, #{uSex,jdbcType=VARCHAR}, 
+      #{uWei,jdbcType=VARCHAR}, #{uTime,jdbcType=TIMESTAMP}, #{uCare,jdbcType=TIMESTAMP}, 
+      #{uUncare,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.day.eurekaprovider.ren.model.User" >
+    insert into user
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="uId != null" >
+        u_id,
+      </if>
+      <if test="uName != null" >
+        u_name,
+      </if>
+      <if test="uSex != null" >
+        u_sex,
+      </if>
+      <if test="uWei != null" >
+        u_wei,
+      </if>
+      <if test="uTime != null" >
+        u_time,
+      </if>
+      <if test="uCare != null" >
+        u_care,
+      </if>
+      <if test="uUncare != null" >
+        u_uncare,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="uId != null" >
+        #{uId,jdbcType=INTEGER},
+      </if>
+      <if test="uName != null" >
+        #{uName,jdbcType=VARCHAR},
+      </if>
+      <if test="uSex != null" >
+        #{uSex,jdbcType=VARCHAR},
+      </if>
+      <if test="uWei != null" >
+        #{uWei,jdbcType=VARCHAR},
+      </if>
+      <if test="uTime != null" >
+        #{uTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="uCare != null" >
+        #{uCare,jdbcType=TIMESTAMP},
+      </if>
+      <if test="uUncare != null" >
+        #{uUncare,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.day.eurekaprovider.ren.model.User" >
+    update user
+    <set >
+      <if test="uName != null" >
+        u_name = #{uName,jdbcType=VARCHAR},
+      </if>
+      <if test="uSex != null" >
+        u_sex = #{uSex,jdbcType=VARCHAR},
+      </if>
+      <if test="uWei != null" >
+        u_wei = #{uWei,jdbcType=VARCHAR},
+      </if>
+      <if test="uTime != null" >
+        u_time = #{uTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="uCare != null" >
+        u_care = #{uCare,jdbcType=TIMESTAMP},
+      </if>
+      <if test="uUncare != null" >
+        u_uncare = #{uUncare,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where u_id = #{uId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.day.eurekaprovider.ren.model.User" >
+    update user
+    set u_name = #{uName,jdbcType=VARCHAR},
+      u_sex = #{uSex,jdbcType=VARCHAR},
+      u_wei = #{uWei,jdbcType=VARCHAR},
+      u_time = #{uTime,jdbcType=TIMESTAMP},
+      u_care = #{uCare,jdbcType=TIMESTAMP},
+      u_uncare = #{uUncare,jdbcType=TIMESTAMP}
+    where u_id = #{uId,jdbcType=INTEGER}
+  </update>
+</mapper>

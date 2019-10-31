@@ -1,0 +1,26 @@
+
+server:
+  # 端口号
+  port: 7501
+spring:
+  # 节点1的标签
+  application:
+    # 服务名称，注意：所有节点的服务名称要保持一致
+    name: gateway
+
+#zuul:
+#  routes:
+#    api-aaa:
+#      path: /mv/**
+#      url: https://mvnrepository.com/
+#    api-cons:
+#          path: /cons/**
+#          serverId: eureka-consumer
+
+# 服务注册与发现相关配置
+eureka:
+  client:
+    # 注册中心地址
+    serviceUrl:
+      defaultZone: http://peer1:7101/eureka/,http://peer2:7102/eureka/
+
