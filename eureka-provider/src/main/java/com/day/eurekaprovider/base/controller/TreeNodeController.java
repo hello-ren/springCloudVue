@@ -22,7 +22,6 @@ public class TreeNodeController {
         JsonData jsonData=new JsonData();
         jsonData.setResult(treeNodes);
         jsonData.setCode(0);
-        System.out.println(jsonData);
         return jsonData;
     }
 }
