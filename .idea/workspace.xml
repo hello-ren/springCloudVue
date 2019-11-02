@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cec4472c-6ec2-4ee3-a09c-e0efa21fe1d0" name="Default" comment="zou">
+    <list default="true" id="cec4472c-6ec2-4ee3-a09c-e0efa21fe1d0" name="Default" comment="yao">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eureka-provider/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/eureka-provider/src/main/resources/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,53 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="NoticeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/controller/NoticeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="79" column="37" lean-forward="false" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TreeNodeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/base/controller/TreeNodeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="37" column="57" lean-forward="false" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EurekaProviderApplication.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/EurekaProviderApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/resources/bootstrap.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="1525">
+              <caret line="68" column="32" lean-forward="false" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -79,8 +39,111 @@
       <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/resources/generatorConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-948">
-              <caret line="36" column="60" lean-forward="false" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
+            <state relative-caret-position="1850">
+              <caret line="74" column="64" lean-forward="false" selection-start-line="74" selection-start-column="64" selection-end-line="74" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BindingMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/mapper/BindingMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BindingMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/resources/mapper/ren/BindingMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <marker date="1572597518536" expanded="true" signature="2590:2700" ph="select from binding" />
+                <marker date="1572597518536" expanded="true" signature="2905:2969" ph="delete from " />
+                <marker date="1572597518536" expanded="true" signature="3067:3567" ph="insert into binding... " />
+                <marker date="1572597518536" expanded="true" signature="5507:6500" ph="update bindi... " />
+                <marker date="1572597518536" expanded="true" signature="6610:7124" ph="update bindi... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="INoticeServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/service/imp/INoticeServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+              <folding>
+                <element signature="e#882#883#0" expanded="true" />
+                <element signature="e#954#955#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoticeMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/mapper/NoticeMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoticeMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/resources/mapper/ren/NoticeMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="35" selection-end-column="16" />
+              <folding>
+                <marker date="1572595927586" expanded="true" signature="2569:2686" ph="select from notice" />
+                <marker date="1572595927586" expanded="true" signature="2823:2911" ph="select from notice" />
+                <marker date="1572595927586" expanded="true" signature="3002:3063" ph="delete from " />
+                <marker date="1572595927586" expanded="true" signature="3161:3669" ph="insert into notice... " />
+                <marker date="1572595927586" expanded="true" signature="6141:7386" ph="update notic... " />
+                <marker date="1572595927586" expanded="true" signature="7498:8027" ph="update notic... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="INoticeService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/service/INoticeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Notice.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/model/Notice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -135,29 +198,31 @@
         <option value="$PROJECT_DIR$/eureka-provider/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/eureka-provider/src/main/resources/mapper/ren/ooo.html" />
         <option value="$PROJECT_DIR$/eureka-provider/src/main/resources/mapper.yao/dd.html" />
-        <option value="$PROJECT_DIR$/eureka-provider/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/base/model/TreeNode.java" />
         <option value="$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/base/util/PageBean.java" />
         <option value="$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/base/util/JsonData.java" />
         <option value="$PROJECT_DIR$/eureka-provider/src/test/java/com/day/eurekaprovider/base/service/imp/BaseTest.java" />
         <option value="$PROJECT_DIR$/eureka-provider/src/test/java/com/day/eurekaprovider/EurekaProviderApplicationTests.java" />
         <option value="$PROJECT_DIR$/eureka-provider/src/test/java/com/day/eurekaprovider/base/service/imp/TreeNodeServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/base/service/imp/TreeNodeServiceImpl.java" />
         <option value="$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/base/controller/TreeNodeController.java" />
         <option value="$PROJECT_DIR$/eureka-provider/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/base/mapper/TreeNodeMapper.java" />
-        <option value="$PROJECT_DIR$/eureka-provider/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/base/service/ITreeNodeService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-provider/src/main/resources/mapper/base/TreeNodeMapper.xml" />
         <option value="$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/mapper/NoticeMapper.java" />
-        <option value="$PROJECT_DIR$/eureka-provider/src/main/resources/mapper/ren/NoticeMapper.xml" />
-        <option value="$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/service/INoticeService.java" />
         <option value="$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/service/imp/INoticeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/controller/NoticeController.java" />
         <option value="$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/EurekaProviderApplication.java" />
         <option value="$PROJECT_DIR$/eureka-server-cluster/src/main/java/com/day/eurekaservercluster/EurekaServerClusterApplication.java" />
+        <option value="$PROJECT_DIR$/eureka-provider/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-provider/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/service/INoticeService.java" />
+        <option value="$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/base/service/imp/TreeNodeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/controller/NoticeController.java" />
+        <option value="$PROJECT_DIR$/eureka-provider/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/mapper/BindingMapper.java" />
+        <option value="$PROJECT_DIR$/eureka-provider/src/main/resources/mapper/ren/NoticeMapper.xml" />
+        <option value="$PROJECT_DIR$/eureka-provider/src/main/resources/mapper/ren/BindingMapper.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -170,8 +235,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/tools/maven/apache-maven-3.6.1-bin/apache-maven-3.6.1" />
-        <option name="userSettingsFile" value="D:\tools\apache-maven-3.6.1\conf\settings.xml" />
+        <option name="mavenHome" value="D:/java/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\java\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -182,17 +247,33 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="eureka-provider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="eureka-server-cluster" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="eureka-server-cluster" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="105" />
-    <option name="y" value="22" />
-    <option name="width" value="1372" />
-    <option name="height" value="979" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="816" />
+    <option name="height" value="576" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -208,7 +289,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -216,13 +298,117 @@
               <item name="springCloudVue" type="b2602c69:ProjectViewProjectNode" />
               <item name="springCloudVue" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="springCloudVue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springCloudVue" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springCloudVue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springCloudVue" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springCloudVue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springCloudVue" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springCloudVue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springCloudVue" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springCloudVue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springCloudVue" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eurekaprovider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springCloudVue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springCloudVue" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eurekaprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springCloudVue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springCloudVue" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eurekaprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springCloudVue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springCloudVue" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eurekaprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springCloudVue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springCloudVue" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eurekaprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springCloudVue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springCloudVue" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springCloudVue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springCloudVue" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springCloudVue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springCloudVue" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,7 +419,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/tools/Git/Git/Git/cmd/git.exe" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -247,24 +433,23 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.day.eurekaprovider.base.service.imp" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\SpringCloud-vue\springCloudVue\eureka-provider\src\main\java\com\day\eurekaprovider\zou\controller" />
-      <recent name="D:\SpringCloud-vue\springCloudVue\eureka-provider\src\main\java\com\day\eurekaprovider" />
-      <recent name="D:\workspace\ssmVue\springCloudVue\eureka-provider\src\main\java\com\day\eurekaprovider\base" />
-      <recent name="D:\workspace\ssmVue\springCloudVue\eureka-provider\src\main\java\com\day\eurekaprovider\ren" />
-      <recent name="D:\workspace\ssmVue\springCloudVue\eureka-provider\src\main\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.day.eurekaprovider.ren.service.imp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.day.eurekaprovider.zou.controller" />
       <recent name="com.day.eurekaprovider.base.util" />
       <recent name="com.day.eurekaprovider.base.service.imp" />
       <recent name="com.day.gateway.filter" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.day.eurekaprovider.ren.service.imp" />
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\ssmVue\springCloudVue\eureka-provider\src\main\java\com\day\eurekaprovider\base" />
+      <recent name="D:\workspace\ssmVue\springCloudVue\eureka-provider\src\main\java\com\day\eurekaprovider\ren" />
+      <recent name="D:\workspace\ssmVue\springCloudVue\eureka-provider\src\main\resources" />
+      <recent name="D:\workspace\ssmVue\springCloudVue\gateway\src\main\resources" />
+      <recent name="D:\workspace\ssmVue\springCloudVue\config-server\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -279,7 +464,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaProviderApplication-pro2">
+  <component name="RunManager" selected="Spring Boot.EurekaProviderApplication-pro1">
     <configuration name="ConfigServerApplication-conSer01" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.day.configserver.ConfigServerApplication" />
@@ -701,23 +886,11 @@
       <workItem from="1572491214806" duration="11040000" />
       <workItem from="1572575666970" duration="1939000" />
       <workItem from="1572577770786" duration="2118000" />
-      <workItem from="1572588998528" duration="2355000" />
+      <workItem from="1572580449847" duration="226000" />
+      <workItem from="1572580711357" duration="1031000" />
+      <workItem from="1572588821445" duration="5992000" />
+      <workItem from="1572654343489" duration="400000" />
     </task>
-    <task id="LOCAL-00001" summary="zou">
-      <created>1572590579655</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1572590579655</updated>
-    </task>
-    <task id="LOCAL-00002" summary="zou">
-      <created>1572590960546</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1572590960546</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -738,13 +911,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38238000" />
+    <option name="totallyTimeSpent" value="44266000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.55246913" sideWeight="0.71482605" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6500593" sideWeight="0.50215983" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33693305" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -757,19 +931,20 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858837" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.55246913" sideWeight="0.28517398" order="8" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7976331" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6500593" sideWeight="0.49784017" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.797153" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977462" sideWeight="0.49784017" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289941" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289941" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24205749" sideWeight="0.4937833" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38390929" sideWeight="0.4937833" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5062167" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -778,7 +953,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3337278" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -790,8 +964,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="123" />
     <MESSAGE value="yao" />
-    <MESSAGE value="zou" />
-    <option name="LAST_COMMIT_MESSAGE" value="zou" />
+    <option name="LAST_COMMIT_MESSAGE" value="yao" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -803,31 +976,28 @@
             <option name="EMULATED" value="true" />
           </properties>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/mapper/NoticeMapper.java</url>
+          <line>11</line>
+          <properties class="com.day.eurekaprovider.ren.mapper.NoticeMapper" method="insertSelective">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/eureka-server-cluster/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-server-cluster/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eureka-consumer/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-consumer/src/main/resources/application.yml">
@@ -864,6 +1034,9 @@
           <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/day/gateway/filter/TokenFilter.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -883,8 +1056,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1658">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comme/src/main/java/com/day/App.java">
@@ -3231,13 +3406,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-server-cluster/src/test/java/com/day/eurekaservercluster/EurekaServerClusterApplicationTests.java" />
-    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/base/service/imp/TreeNodeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config-server/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2050">
@@ -3252,11 +3420,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-provider/pom.xml">
+    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/resources/bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="375">
+          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -3273,6 +3440,9 @@
           <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/base/model/TreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -3282,10 +3452,49 @@
       </provider>
     </entry>
     <entry file="jar://D:/tools/java/jdk-8u144/src.zip!/java/util/Date.java" />
-    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/model/Notice.java">
+    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/resources/mapper/base/TreeNodeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="307">
+          <caret line="146" column="17" lean-forward="true" selection-start-line="143" selection-start-column="7" selection-end-line="146" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server-cluster/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server-cluster/src/main/java/com/day/eurekaservercluster/EurekaServerClusterApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-provider/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/base/service/ITreeNodeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -3296,127 +3505,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/resources/mapper/ren/NoticeMapper.xml">
+    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/base/controller/TreeNodeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+        <state relative-caret-position="150">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/resources/mapper/base/TreeNodeMapper.xml">
+    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/EurekaProviderApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="146" column="17" lean-forward="true" selection-start-line="143" selection-start-column="7" selection-end-line="146" selection-end-column="17" />
+        <state relative-caret-position="275">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/base/service/imp/TreeNodeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/model/Notice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/mapper/NoticeMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="150">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/service/INoticeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/service/imp/INoticeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding>
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/controller/NoticeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-685">
-          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/service/imp/INoticeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/service/INoticeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/base/service/ITreeNodeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="1525">
+          <caret line="68" column="32" lean-forward="false" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-948">
-          <caret line="36" column="60" lean-forward="false" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
+        <state relative-caret-position="1850">
+          <caret line="74" column="64" lean-forward="false" selection-start-line="74" selection-start-column="64" selection-end-line="74" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/resources/bootstrap.yml">
+    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/ren/mapper/BindingMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-server-cluster/src/main/java/com/day/eurekaservercluster/EurekaServerClusterApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" column="69" lean-forward="true" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="79" column="37" lean-forward="false" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/base/controller/TreeNodeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        <state relative-caret-position="425">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/resources/mapper/ren/NoticeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="37" column="57" lean-forward="false" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-          <folding />
+        <state relative-caret-position="475">
+          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <marker date="1572595927586" expanded="true" signature="2569:2686" ph="select from notice" />
+            <marker date="1572595927586" expanded="true" signature="2823:2911" ph="select from notice" />
+            <marker date="1572595927586" expanded="true" signature="3002:3063" ph="delete from " />
+            <marker date="1572595927586" expanded="true" signature="3161:3669" ph="insert into notice... " />
+            <marker date="1572595927586" expanded="true" signature="6141:7386" ph="update notic... " />
+            <marker date="1572595927586" expanded="true" signature="7498:8027" ph="update notic... " />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/zou/zxc.java">
+    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/resources/mapper/ren/BindingMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="25">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1572597518536" expanded="true" signature="2590:2700" ph="select from binding" />
+            <marker date="1572597518536" expanded="true" signature="2905:2969" ph="delete from " />
+            <marker date="1572597518536" expanded="true" signature="3067:3567" ph="insert into binding... " />
+            <marker date="1572597518536" expanded="true" signature="5507:6500" ph="update bindi... " />
+            <marker date="1572597518536" expanded="true" signature="6610:7124" ph="update bindi... " />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-provider/src/main/java/com/day/eurekaprovider/EurekaProviderApplication.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="107">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -3430,10 +3669,24 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>comme</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -3453,6 +3706,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
