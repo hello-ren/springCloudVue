@@ -28,6 +28,10 @@ public class NoticeController {
 
     @RequestMapping("add")
     public JsonData add(Notice notice){
+        notice.setNoUserId(1);
+        notice.setNoFromUser("XX银行");
+        notice.setNoCategroy("动账成功！");
+        notice.setNoState(0);
         Integer add = noticeService.add(notice);
 
         JsonData jsonData=new JsonData();

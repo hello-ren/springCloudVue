@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service(value = "ITreeNodeService")
+@Service
 public class TreeNodeServiceImpl implements ITreeNodeService {
 
     @Autowired

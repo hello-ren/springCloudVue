@@ -12,6 +12,8 @@ public interface INoticeService {
     public Integer add(Notice notice);
     public Integer del(Notice notice);
     public Notice one(Notice notice);
+
+    @Transactional(readOnly = true)
     public List<Notice> list(Notice notice);
 
 }

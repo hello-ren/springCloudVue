@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.day.eurekaprovider.ren.mapper.BindingMapper" >
+  <resultMap id="BaseResultMap" type="com.day.eurekaprovider.ren.model.Binding" >
+    <constructor >
+      <idArg column="bin_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="bin_categroy" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="bin_number" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="bin_phone" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="bin_pwd" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="bin_account" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="bin_acc_num" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="bin_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="bin_unlink_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="bin_info" jdbcType="VARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+
+  <resultMap id="row" type="com.day.eurekaprovider.ren.model.Binding">
+
+    <!--bin_id-->
+    <!--bin_categroy证件类型-->
+    <!--bin_number证件号码-->
+    <!--bin_phone手机号-->
+    <!--bin_pwd交易密码-->
+    <!--bin_account账户类型-->
+    <!--bin_acc_num账号-->
+    <!--bin_time绑定时间-->
+    <!--bin_unlink_time解绑时间-->
+    <!--bin_info预留信息-->
+
+
+    <id column="bin_id" property="binId" javaType="java.lang.Integer"/>
+    <result column="bin_categroy" property="binCategroy" javaType="java.lang.Integer"/>
+    <result column="bin_number" property="binNumber" javaType="java.lang.String"/>
+    <result column="bin_phone" property="binPhone" javaType="java.lang.String"/>
+    <result column="bin_pwd" property="binPwd" javaType="java.lang.Integer"/>
+    <result column="bin_account" property="binAccount" javaType="java.lang.String"/>
+    <result column="bin_acc_num" property="binAccNum" javaType="java.lang.String"/>
+    <result column="bin_time" property="binTime" javaType="java.util.Date"/>
+    <result column="bin_unlink_time" property="binUnlinkTime" javaType="java.lang.String"/>
+    <result column="bin_info" property="binInfo" javaType="java.lang.String"/>
+
+  </resultMap>
+  <sql id="Base_Column_List" >
+    bin_id, bin_categroy, bin_number, bin_phone, bin_pwd, bin_account, bin_acc_num, bin_time, 
+    bin_unlink_time, bin_info
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from binding
+    where bin_id = #{binId,jdbcType=INTEGER}
+  </select>
+  <select id="list" resultMap="row"
+          parameterType="com.day.eurekaprovider.ren.model.Binding">
+
+
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from binding
+    where bin_id = #{binId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.day.eurekaprovider.ren.model.Binding" >
+    insert into binding (bin_id, bin_categroy, bin_number, 
+      bin_phone, bin_pwd, bin_account, 
+      bin_acc_num, bin_time, bin_unlink_time, 
+      bin_info)
+    values (#{binId,jdbcType=INTEGER}, #{binCategroy,jdbcType=VARCHAR}, #{binNumber,jdbcType=VARCHAR}, 
+      #{binPhone,jdbcType=VARCHAR}, #{binPwd,jdbcType=VARCHAR}, #{binAccount,jdbcType=VARCHAR}, 
+      #{binAccNum,jdbcType=INTEGER}, #{binTime,jdbcType=TIMESTAMP}, #{binUnlinkTime,jdbcType=TIMESTAMP}, 
+      #{binInfo,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.day.eurekaprovider.ren.model.Binding" >
+    insert into binding
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="binId != null" >
+        bin_id,
+      </if>
+      <if test="binCategroy != null" >
+        bin_categroy,
+      </if>
+      <if test="binNumber != null" >
+        bin_number,
+      </if>
+      <if test="binPhone != null" >
+        bin_phone,
+      </if>
+      <if test="binPwd != null" >
+        bin_pwd,
+      </if>
+      <if test="binAccount != null" >
+        bin_account,
+      </if>
+      <if test="binAccNum != null" >
+        bin_acc_num,
+      </if>
+      <if test="binTime != null" >
+        bin_time,
+      </if>
+      <if test="binUnlinkTime != null" >
+        bin_unlink_time,
+      </if>
+      <if test="binInfo != null" >
+        bin_info,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="binId != null" >
+        #{binId,jdbcType=INTEGER},
+      </if>
+      <if test="binCategroy != null" >
+        #{binCategroy,jdbcType=VARCHAR},
+      </if>
+      <if test="binNumber != null" >
+        #{binNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="binPhone != null" >
+        #{binPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="binPwd != null" >
+        #{binPwd,jdbcType=VARCHAR},
+      </if>
+      <if test="binAccount != null" >
+        #{binAccount,jdbcType=VARCHAR},
+      </if>
+      <if test="binAccNum != null" >
+        #{binAccNum,jdbcType=INTEGER},
+      </if>
+      <if test="binTime != null" >
+        #{binTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="binUnlinkTime != null" >
+        #{binUnlinkTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="binInfo != null" >
+        #{binInfo,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.day.eurekaprovider.ren.model.Binding" >
+    update binding
+    <set >
+      <if test="binCategroy != null" >
+        bin_categroy = #{binCategroy,jdbcType=VARCHAR},
+      </if>
+      <if test="binNumber != null" >
+        bin_number = #{binNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="binPhone != null" >
+        bin_phone = #{binPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="binPwd != null" >
+        bin_pwd = #{binPwd,jdbcType=VARCHAR},
+      </if>
+      <if test="binAccount != null" >
+        bin_account = #{binAccount,jdbcType=VARCHAR},
+      </if>
+      <if test="binAccNum != null" >
+        bin_acc_num = #{binAccNum,jdbcType=INTEGER},
+      </if>
+      <if test="binTime != null" >
+        bin_time = #{binTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="binUnlinkTime != null" >
+        bin_unlink_time = #{binUnlinkTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="binInfo != null" >
+        bin_info = #{binInfo,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where bin_id = #{binId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.day.eurekaprovider.ren.model.Binding" >
+    update binding
+    set bin_categroy = #{binCategroy,jdbcType=VARCHAR},
+      bin_number = #{binNumber,jdbcType=VARCHAR},
+      bin_phone = #{binPhone,jdbcType=VARCHAR},
+      bin_pwd = #{binPwd,jdbcType=VARCHAR},
+      bin_account = #{binAccount,jdbcType=VARCHAR},
+      bin_acc_num = #{binAccNum,jdbcType=INTEGER},
+      bin_time = #{binTime,jdbcType=TIMESTAMP},
+      bin_unlink_time = #{binUnlinkTime,jdbcType=TIMESTAMP},
+      bin_info = #{binInfo,jdbcType=VARCHAR}
+    where bin_id = #{binId,jdbcType=INTEGER}
+  </update>
+
+
+</mapper>

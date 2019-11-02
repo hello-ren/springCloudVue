@@ -19,23 +19,13 @@
 
     <resultMap id="row" type="com.day.eurekaprovider.ren.model.Notice">
 
-        <!--no_id-->
-        <!--no_user_id  通知的用户  （user的外键）-->
-        <!--no_from_user  发送通知来源-->
-        <!--no_categroy &#45;&#45;类别-->
-        <!--no_state &#45;&#45;交易状态 0成功/1失败-->
-        <!--no_reminder &#45;&#45; 温馨提示-->
-        <!--no_back &#45;&#45; 备注-->
-        <!--no_time   通知时间-->
-        <!--no_one &#45;&#45; 添加字段一-->
-        <!--no_two &#45;&#45; 添加字段二-->
-        <!--no_three &#45;&#45; 添加字段三-->
+
 
         <id column="no_id" property="noId" javaType="java.lang.Integer"/>
         <result column="node_name" property="noUserId" javaType="java.lang.Integer"/>
         <result column="no_from_user" property="noFromUser" javaType="java.lang.String"/>
         <result column="no_categroy" property="noCategroy" javaType="java.lang.String"/>
-        <result column="no_state" property="noState" javaType="java.lang.String"/>
+        <result column="no_state" property="noState" javaType="java.lang.Integer"/>
         <result column="no_reminder" property="noReminder" javaType="java.lang.String"/>
         <result column="no_back" property="noBack" javaType="java.lang.String"/>
         <result column="no_time" property="noTime" javaType="java.util.Date"/>
