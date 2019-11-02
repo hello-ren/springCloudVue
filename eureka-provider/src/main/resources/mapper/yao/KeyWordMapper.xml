@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.day.eurekaprovider.yao.mapper.KeyWordMapper" >
+  <resultMap id="BaseResultMap" type="com.day.eurekaprovider.yao.model.KeyWord" >
+    <constructor >
+      <idArg column="key_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="key_cid" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="key_number" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="key_function" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="key_head" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="key_content" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="key_foot" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="key_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="key_count" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="key_back" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="key_state" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="key_ptime" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+    </constructor>
+  </resultMap>
+
+  <resultMap id="row" type="com.day.eurekaprovider.yao.model.KeyWord" >
+      <id column="key_id" property="keyId" javaType="java.lang.Integer" />
+      <result column="key_cid" property="keyCid" javaType="java.lang.Integer" />
+      <result column="key_number" property="keyNumber" javaType="java.lang.String" />
+      <result column="key_function" property="keyFunction" javaType="java.lang.String" />
+      <result column="key_head" property="keyHead" javaType="java.lang.String" />
+      <result column="key_content" property="keyContent" javaType="java.lang.String" />
+      <result column="key_foot" property="keyFoot" javaType="java.lang.String" />
+      <result column="key_time" property="keyTime" javaType="java.util.Date" />
+      <result column="key_count" property="keyCount" javaType="java.lang.Integer" />
+      <result column="key_back" property="keyBack" javaType="java.lang.String" />
+      <result column="key_state" property="keyState" javaType="java.lang.Integer" />
+      <result column="key_ptime" property="keyPtime" javaType="java.util.Date" />
+  </resultMap>
+
+  <sql id="Base_Column_List" >
+    key_id, key_cid, key_number, key_function, key_head, key_content, key_foot, key_time, 
+    key_count, key_back, key_state, key_ptime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from key_word
+    where key_id = #{keyId,jdbcType=INTEGER}
+  </select>
+    <select id="list" resultMap="row" parameterType="com.day.eurekaprovider.yao.model.KeyWord">
+      select
+      <include refid="Base_Column_List" />
+      from key_word
+      where 1=1
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from key_word
+    where key_id = #{keyId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.day.eurekaprovider.yao.model.KeyWord" >
+    insert into key_word (key_id, key_cid, key_number, 
+      key_function, key_head, key_content, 
+      key_foot, key_time, key_count, 
+      key_back, key_state, key_ptime
+      )
+    values (#{keyId,jdbcType=INTEGER}, #{keyCid,jdbcType=INTEGER}, #{keyNumber,jdbcType=VARCHAR}, 
+      #{keyFunction,jdbcType=VARCHAR}, #{keyHead,jdbcType=VARCHAR}, #{keyContent,jdbcType=VARCHAR}, 
+      #{keyFoot,jdbcType=VARCHAR}, #{keyTime,jdbcType=TIMESTAMP}, #{keyCount,jdbcType=INTEGER}, 
+      #{keyBack,jdbcType=VARCHAR}, #{keyState,jdbcType=INTEGER}, #{keyPtime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.day.eurekaprovider.yao.model.KeyWord" >
+    insert into key_word
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="keyId != null" >
+        key_id,
+      </if>
+      <if test="keyCid != null" >
+        key_cid,
+      </if>
+      <if test="keyNumber != null" >
+        key_number,
+      </if>
+      <if test="keyFunction != null" >
+        key_function,
+      </if>
+      <if test="keyHead != null" >
+        key_head,
+      </if>
+      <if test="keyContent != null" >
+        key_content,
+      </if>
+      <if test="keyFoot != null" >
+        key_foot,
+      </if>
+      <if test="keyTime != null" >
+        key_time,
+      </if>
+      <if test="keyCount != null" >
+        key_count,
+      </if>
+      <if test="keyBack != null" >
+        key_back,
+      </if>
+      <if test="keyState != null" >
+        key_state,
+      </if>
+      <if test="keyPtime != null" >
+        key_ptime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="keyId != null" >
+        #{keyId,jdbcType=INTEGER},
+      </if>
+      <if test="keyCid != null" >
+        #{keyCid,jdbcType=INTEGER},
+      </if>
+      <if test="keyNumber != null" >
+        #{keyNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="keyFunction != null" >
+        #{keyFunction,jdbcType=VARCHAR},
+      </if>
+      <if test="keyHead != null" >
+        #{keyHead,jdbcType=VARCHAR},
+      </if>
+      <if test="keyContent != null" >
+        #{keyContent,jdbcType=VARCHAR},
+      </if>
+      <if test="keyFoot != null" >
+        #{keyFoot,jdbcType=VARCHAR},
+      </if>
+      <if test="keyTime != null" >
+        #{keyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="keyCount != null" >
+        #{keyCount,jdbcType=INTEGER},
+      </if>
+      <if test="keyBack != null" >
+        #{keyBack,jdbcType=VARCHAR},
+      </if>
+      <if test="keyState != null" >
+        #{keyState,jdbcType=INTEGER},
+      </if>
+      <if test="keyPtime != null" >
+        #{keyPtime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.day.eurekaprovider.yao.model.KeyWord" >
+    update key_word
+    <set >
+      <if test="keyCid != null" >
+        key_cid = #{keyCid,jdbcType=INTEGER},
+      </if>
+      <if test="keyNumber != null" >
+        key_number = #{keyNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="keyFunction != null" >
+        key_function = #{keyFunction,jdbcType=VARCHAR},
+      </if>
+      <if test="keyHead != null" >
+        key_head = #{keyHead,jdbcType=VARCHAR},
+      </if>
+      <if test="keyContent != null" >
+        key_content = #{keyContent,jdbcType=VARCHAR},
+      </if>
+      <if test="keyFoot != null" >
+        key_foot = #{keyFoot,jdbcType=VARCHAR},
+      </if>
+      <if test="keyTime != null" >
+        key_time = #{keyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="keyCount != null" >
+        key_count = #{keyCount,jdbcType=INTEGER},
+      </if>
+      <if test="keyBack != null" >
+        key_back = #{keyBack,jdbcType=VARCHAR},
+      </if>
+      <if test="keyState != null" >
+        key_state = #{keyState,jdbcType=INTEGER},
+      </if>
+      <if test="keyPtime != null" >
+        key_ptime = #{keyPtime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where key_id = #{keyId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.day.eurekaprovider.yao.model.KeyWord" >
+    update key_word
+    set key_cid = #{keyCid,jdbcType=INTEGER},
+      key_number = #{keyNumber,jdbcType=VARCHAR},
+      key_function = #{keyFunction,jdbcType=VARCHAR},
+      key_head = #{keyHead,jdbcType=VARCHAR},
+      key_content = #{keyContent,jdbcType=VARCHAR},
+      key_foot = #{keyFoot,jdbcType=VARCHAR},
+      key_time = #{keyTime,jdbcType=TIMESTAMP},
+      key_count = #{keyCount,jdbcType=INTEGER},
+      key_back = #{keyBack,jdbcType=VARCHAR},
+      key_state = #{keyState,jdbcType=INTEGER},
+      key_ptime = #{keyPtime,jdbcType=TIMESTAMP}
+    where key_id = #{keyId,jdbcType=INTEGER}
+  </update>
+</mapper>
