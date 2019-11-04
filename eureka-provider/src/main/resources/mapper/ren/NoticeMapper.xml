@@ -1,65 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.day.eurekaprovider.ren.mapper.NoticeMapper">
-    <resultMap id="BaseResultMap" type="com.day.eurekaprovider.ren.model.Notice">
-        <constructor>
-            <idArg column="no_id" jdbcType="INTEGER" javaType="java.lang.Integer"/>
-            <arg column="no_user_id" jdbcType="INTEGER" javaType="java.lang.Integer"/>
-            <arg column="no_from_user" jdbcType="VARCHAR" javaType="java.lang.String"/>
-            <arg column="no_categroy" jdbcType="VARCHAR" javaType="java.lang.String"/>
-            <arg column="no_state" jdbcType="INTEGER" javaType="java.lang.Integer"/>
-            <arg column="no_reminder" jdbcType="VARCHAR" javaType="java.lang.String"/>
-            <arg column="no_back" jdbcType="VARCHAR" javaType="java.lang.String"/>
-            <arg column="no_time" jdbcType="TIMESTAMP" javaType="java.util.Date"/>
-            <arg column="no_one" jdbcType="VARCHAR" javaType="java.lang.String"/>
-            <arg column="no_two" jdbcType="VARCHAR" javaType="java.lang.String"/>
-            <arg column="no_three" jdbcType="VARCHAR" javaType="java.lang.String"/>
-        </constructor>
-    </resultMap>
+<mapper namespace="com.day.eurekaprovider.ren.mapper.NoticeMapper" >
+  <resultMap id="BaseResultMap" type="com.day.eurekaprovider.ren.model.Notice" >
+    <constructor >
+      <idArg column="no_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="no_user_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="no_from_user" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="no_categroy" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="no_state" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="no_reminder" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="no_back" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="no_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="no_one" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="no_two" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="no_three" jdbcType="VARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
 
-    <resultMap id="row" type="com.day.eurekaprovider.ren.model.Notice">
-
-
-
-        <id column="no_id" property="noId" javaType="java.lang.Integer"/>
-        <result column="node_name" property="noUserId" javaType="java.lang.Integer"/>
-        <result column="no_from_user" property="noFromUser" javaType="java.lang.String"/>
-        <result column="no_categroy" property="noCategroy" javaType="java.lang.String"/>
-        <result column="no_state" property="noState" javaType="java.lang.Integer"/>
-        <result column="no_reminder" property="noReminder" javaType="java.lang.String"/>
-        <result column="no_back" property="noBack" javaType="java.lang.String"/>
-        <result column="no_time" property="noTime" javaType="java.util.Date"/>
-        <result column="no_one" property="noOne" javaType="java.lang.String"/>
-        <result column="no_two" property="noTwo" javaType="java.lang.String"/>
-        <result column="no_three" property="noThree" javaType="java.lang.String"/>
-
-    </resultMap>
+  <resultMap id="row" type="com.day.eurekaprovider.ren.model.Notice">
 
 
-    <sql id="Base_Column_List">
+
+    <id column="no_id" property="noId" javaType="java.lang.Integer"/>
+    <result column="node_name" property="noUserId" javaType="java.lang.Integer"/>
+    <result column="no_from_user" property="noFromUser" javaType="java.lang.String"/>
+    <result column="no_categroy" property="noCategroy" javaType="java.lang.String"/>
+    <result column="no_state" property="noState" javaType="java.lang.Integer"/>
+    <result column="no_reminder" property="noReminder" javaType="java.lang.String"/>
+    <result column="no_back" property="noBack" javaType="java.lang.String"/>
+    <result column="no_time" property="noTime" javaType="java.sql.Timestamp"/>
+    <result column="no_one" property="noOne" javaType="java.lang.String"/>
+    <result column="no_two" property="noTwo" javaType="java.lang.String"/>
+    <result column="no_three" property="noThree" javaType="java.lang.String"/>
+
+  </resultMap>
+
+  <sql id="Base_Column_List" >
     no_id, no_user_id, no_from_user, no_categroy, no_state, no_reminder, no_back, no_time, 
     no_one, no_two, no_three
   </sql>
-    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
-        select
-        <include refid="Base_Column_List"/>
-        from notice
-        where no_id = #{noId,jdbcType=INTEGER}
-    </select>
-
-    <select id="listNotice" resultMap="row"
-            parameterType="com.day.eurekaprovider.ren.model.Notice">
-        select
-        <include refid="Base_Column_List"/>
-        from notice
-        where 1=1
-    </select>
-
-    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from notice
+    where no_id = #{noId,jdbcType=INTEGER}
+  </select>
+  <select id="listNotice" resultMap="row"
+          parameterType="com.day.eurekaprovider.ren.model.Notice">
+    select
+    <include refid="Base_Column_List"/>
+    from notice
+    where 1=1
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from notice
     where no_id = #{noId,jdbcType=INTEGER}
   </delete>
-    <insert id="insert" parameterType="com.day.eurekaprovider.ren.model.Notice">
+  <insert id="insert" parameterType="com.day.eurekaprovider.ren.model.Notice" >
     insert into notice (no_id, no_user_id, no_from_user, 
       no_categroy, no_state, no_reminder, 
       no_back, no_time, no_one, 
@@ -69,116 +66,116 @@
       #{noBack,jdbcType=VARCHAR}, #{noTime,jdbcType=TIMESTAMP}, #{noOne,jdbcType=VARCHAR}, 
       #{noTwo,jdbcType=VARCHAR}, #{noThree,jdbcType=VARCHAR})
   </insert>
-    <insert id="insertSelective" parameterType="com.day.eurekaprovider.ren.model.Notice">
-        insert into notice
-        <trim prefix="(" suffix=")" suffixOverrides=",">
-            <if test="noId != null">
-                no_id,
-            </if>
-            <if test="noUserId != null">
-                no_user_id,
-            </if>
-            <if test="noFromUser != null">
-                no_from_user,
-            </if>
-            <if test="noCategroy != null">
-                no_categroy,
-            </if>
-            <if test="noState != null">
-                no_state,
-            </if>
-            <if test="noReminder != null">
-                no_reminder,
-            </if>
-            <if test="noBack != null">
-                no_back,
-            </if>
-            <if test="noTime != null">
-                no_time,
-            </if>
-            <if test="noOne != null">
-                no_one,
-            </if>
-            <if test="noTwo != null">
-                no_two,
-            </if>
-            <if test="noThree != null">
-                no_three,
-            </if>
-        </trim>
-        <trim prefix="values (" suffix=")" suffixOverrides=",">
-            <if test="noId != null">
-                #{noId,jdbcType=INTEGER},
-            </if>
-            <if test="noUserId != null">
-                #{noUserId,jdbcType=INTEGER},
-            </if>
-            <if test="noFromUser != null">
-                #{noFromUser,jdbcType=VARCHAR},
-            </if>
-            <if test="noCategroy != null">
-                #{noCategroy,jdbcType=VARCHAR},
-            </if>
-            <if test="noState != null">
-                #{noState,jdbcType=INTEGER},
-            </if>
-            <if test="noReminder != null">
-                #{noReminder,jdbcType=VARCHAR},
-            </if>
-            <if test="noBack != null">
-                #{noBack,jdbcType=VARCHAR},
-            </if>
-            <if test="noTime != null">
-                #{noTime,jdbcType=TIMESTAMP},
-            </if>
-            <if test="noOne != null">
-                #{noOne,jdbcType=VARCHAR},
-            </if>
-            <if test="noTwo != null">
-                #{noTwo,jdbcType=VARCHAR},
-            </if>
-            <if test="noThree != null">
-                #{noThree,jdbcType=VARCHAR},
-            </if>
-        </trim>
-    </insert>
-    <update id="updateByPrimaryKeySelective" parameterType="com.day.eurekaprovider.ren.model.Notice">
-        update notice
-        <set>
-            <if test="noUserId != null">
-                no_user_id = #{noUserId,jdbcType=INTEGER},
-            </if>
-            <if test="noFromUser != null">
-                no_from_user = #{noFromUser,jdbcType=VARCHAR},
-            </if>
-            <if test="noCategroy != null">
-                no_categroy = #{noCategroy,jdbcType=VARCHAR},
-            </if>
-            <if test="noState != null">
-                no_state = #{noState,jdbcType=INTEGER},
-            </if>
-            <if test="noReminder != null">
-                no_reminder = #{noReminder,jdbcType=VARCHAR},
-            </if>
-            <if test="noBack != null">
-                no_back = #{noBack,jdbcType=VARCHAR},
-            </if>
-            <if test="noTime != null">
-                no_time = #{noTime,jdbcType=TIMESTAMP},
-            </if>
-            <if test="noOne != null">
-                no_one = #{noOne,jdbcType=VARCHAR},
-            </if>
-            <if test="noTwo != null">
-                no_two = #{noTwo,jdbcType=VARCHAR},
-            </if>
-            <if test="noThree != null">
-                no_three = #{noThree,jdbcType=VARCHAR},
-            </if>
-        </set>
-        where no_id = #{noId,jdbcType=INTEGER}
-    </update>
-    <update id="updateByPrimaryKey" parameterType="com.day.eurekaprovider.ren.model.Notice">
+  <insert id="insertSelective" parameterType="com.day.eurekaprovider.ren.model.Notice" >
+    insert into notice
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="noId != null" >
+        no_id,
+      </if>
+      <if test="noUserId != null" >
+        no_user_id,
+      </if>
+      <if test="noFromUser != null" >
+        no_from_user,
+      </if>
+      <if test="noCategroy != null" >
+        no_categroy,
+      </if>
+      <if test="noState != null" >
+        no_state,
+      </if>
+      <if test="noReminder != null" >
+        no_reminder,
+      </if>
+      <if test="noBack != null" >
+        no_back,
+      </if>
+      <if test="noTime != null" >
+        no_time,
+      </if>
+      <if test="noOne != null" >
+        no_one,
+      </if>
+      <if test="noTwo != null" >
+        no_two,
+      </if>
+      <if test="noThree != null" >
+        no_three,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="noId != null" >
+        #{noId,jdbcType=INTEGER},
+      </if>
+      <if test="noUserId != null" >
+        #{noUserId,jdbcType=INTEGER},
+      </if>
+      <if test="noFromUser != null" >
+        #{noFromUser,jdbcType=VARCHAR},
+      </if>
+      <if test="noCategroy != null" >
+        #{noCategroy,jdbcType=VARCHAR},
+      </if>
+      <if test="noState != null" >
+        #{noState,jdbcType=INTEGER},
+      </if>
+      <if test="noReminder != null" >
+        #{noReminder,jdbcType=VARCHAR},
+      </if>
+      <if test="noBack != null" >
+        #{noBack,jdbcType=VARCHAR},
+      </if>
+      <if test="noTime != null" >
+        #{noTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="noOne != null" >
+        #{noOne,jdbcType=VARCHAR},
+      </if>
+      <if test="noTwo != null" >
+        #{noTwo,jdbcType=VARCHAR},
+      </if>
+      <if test="noThree != null" >
+        #{noThree,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.day.eurekaprovider.ren.model.Notice" >
+    update notice
+    <set >
+      <if test="noUserId != null" >
+        no_user_id = #{noUserId,jdbcType=INTEGER},
+      </if>
+      <if test="noFromUser != null" >
+        no_from_user = #{noFromUser,jdbcType=VARCHAR},
+      </if>
+      <if test="noCategroy != null" >
+        no_categroy = #{noCategroy,jdbcType=VARCHAR},
+      </if>
+      <if test="noState != null" >
+        no_state = #{noState,jdbcType=INTEGER},
+      </if>
+      <if test="noReminder != null" >
+        no_reminder = #{noReminder,jdbcType=VARCHAR},
+      </if>
+      <if test="noBack != null" >
+        no_back = #{noBack,jdbcType=VARCHAR},
+      </if>
+      <if test="noTime != null" >
+        no_time = #{noTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="noOne != null" >
+        no_one = #{noOne,jdbcType=VARCHAR},
+      </if>
+      <if test="noTwo != null" >
+        no_two = #{noTwo,jdbcType=VARCHAR},
+      </if>
+      <if test="noThree != null" >
+        no_three = #{noThree,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where no_id = #{noId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.day.eurekaprovider.ren.model.Notice" >
     update notice
     set no_user_id = #{noUserId,jdbcType=INTEGER},
       no_from_user = #{noFromUser,jdbcType=VARCHAR},

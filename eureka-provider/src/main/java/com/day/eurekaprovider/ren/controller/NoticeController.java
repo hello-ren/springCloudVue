@@ -1,9 +1,11 @@
 package com.day.eurekaprovider.ren.controller;
 
 import com.day.eurekaprovider.base.util.JsonData;
+import com.day.eurekaprovider.base.util.PageBean;
 import com.day.eurekaprovider.ren.model.Notice;
 import com.day.eurekaprovider.ren.service.INoticeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,40 +19,39 @@ public class NoticeController {
     private INoticeService noticeService;
 
     @RequestMapping("list")
-    public JsonData list(Notice notice){
-        List<Notice> list = noticeService.list(notice);
+    @CrossOrigin
+    public JsonData list(Notice notice,PageBean p){
+        List<Notice> list = noticeService.list(notice,p);
 
         JsonData jsonData=new JsonData();
-        jsonData.setCode(0);
+        jsonData.setTotal(p.getTotal());
+        jsonData.setPage(p.getPage());
+        jsonData.setRows(p.getRows());
         jsonData.setResult(list);
         return jsonData;
     }
 
-    @RequestMapping("add")
-    public JsonData add(Notice notice){
+    @RequestMapping("addUpdate")
+    @CrossOrigin
+    public JsonData addUpdate(Notice notice){
         notice.setNoUserId(1);
-        notice.setNoFromUser("XX银行");
-        notice.setNoCategroy("动账成功！");
         notice.setNoState(0);
-        Integer add = noticeService.add(notice);
+        if(null!=notice.getNoId()){
+            Integer update = noticeService.update(notice);
+        }else{
+            Integer add = noticeService.add(notice);
+
+        }
 
         JsonData jsonData=new JsonData();
         jsonData.setCode(0);
-        jsonData.setMessage("模板添加成功！");
+        jsonData.setMessage("操作成功！");
         return jsonData;
     }
 
-    @RequestMapping("update")
-    public JsonData update(Notice notice){
-        Integer update = noticeService.update(notice);
-
-        JsonData jsonData=new JsonData();
-        jsonData.setCode(0);
-        jsonData.setMessage("模板添加成功！");
-        return jsonData;
-    }
 
     @RequestMapping("del")
+    @CrossOrigin
     public JsonData del(Notice notice){
         Integer del = noticeService.del(notice);
 
@@ -61,6 +62,7 @@ public class NoticeController {
     }
 
     @RequestMapping("one")
+    @CrossOrigin
     public JsonData one(Notice notice){
         Notice one = noticeService.one(notice);
 

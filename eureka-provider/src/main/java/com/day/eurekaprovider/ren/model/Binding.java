@@ -5,6 +5,8 @@ import java.util.Date;
 public class Binding {
     private Integer binId;
 
+    private Integer userId;
+
     private String binCategroy;
 
     private String binNumber;
@@ -15,7 +17,7 @@ public class Binding {
 
     private String binAccount;
 
-    private Integer binAccNum;
+    private String binAccNum;
 
     private Date binTime;
 
@@ -23,8 +25,9 @@ public class Binding {
 
     private String binInfo;
 
-    public Binding(Integer binId, String binCategroy, String binNumber, String binPhone, String binPwd, String binAccount, Integer binAccNum, Date binTime, Date binUnlinkTime, String binInfo) {
+    public Binding(Integer binId, Integer userId, String binCategroy, String binNumber, String binPhone, String binPwd, String binAccount, String binAccNum, Date binTime, Date binUnlinkTime, String binInfo) {
         this.binId = binId;
+        this.userId = userId;
         this.binCategroy = binCategroy;
         this.binNumber = binNumber;
         this.binPhone = binPhone;
@@ -46,6 +49,14 @@ public class Binding {
 
     public void setBinId(Integer binId) {
         this.binId = binId;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public String getBinCategroy() {
@@ -88,11 +99,11 @@ public class Binding {
         this.binAccount = binAccount;
     }
 
-    public Integer getBinAccNum() {
+    public String getBinAccNum() {
         return binAccNum;
     }
 
-    public void setBinAccNum(Integer binAccNum) {
+    public void setBinAccNum(String binAccNum) {
         this.binAccNum = binAccNum;
     }
 

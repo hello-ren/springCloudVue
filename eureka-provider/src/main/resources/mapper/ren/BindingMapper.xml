@@ -4,6 +4,7 @@
   <resultMap id="BaseResultMap" type="com.day.eurekaprovider.ren.model.Binding" >
     <constructor >
       <idArg column="bin_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="bin_categroy" jdbcType="VARCHAR" javaType="java.lang.String" />
       <arg column="bin_number" jdbcType="VARCHAR" javaType="java.lang.String" />
       <arg column="bin_phone" jdbcType="VARCHAR" javaType="java.lang.String" />
@@ -18,33 +19,40 @@
 
   <resultMap id="row" type="com.day.eurekaprovider.ren.model.Binding">
 
+
     <!--bin_id-->
-    <!--bin_categroy证件类型-->
-    <!--bin_number证件号码-->
-    <!--bin_phone手机号-->
-    <!--bin_pwd交易密码-->
-    <!--bin_account账户类型-->
-    <!--bin_acc_num账号-->
-    <!--bin_time绑定时间-->
-    <!--bin_unlink_time解绑时间-->
-    <!--bin_info预留信息-->
+    <!--bin_categroy 证件类型-->
+    <!--bin_number 证件号码-->
+
+    <!--bin_phone 手 机号-->
+    <!--bin_pwd 交易密码-->
+    <!--bin_account 账户类型-->
+
+    <!--bin_acc_num 账号-->
+    <!--bin_time 绑定时间-->
+    <!--bin_unlink_time 解绑时间-->
+    <!--bin_info 预留信息-->
 
 
     <id column="bin_id" property="binId" javaType="java.lang.Integer"/>
-    <result column="bin_categroy" property="binCategroy" javaType="java.lang.Integer"/>
+    <result column="user_id" property="userId" javaType="java.lang.Integer"/>
+
+    <result column="bin_categroy" property="binCategroy" javaType="java.lang.String"/>
     <result column="bin_number" property="binNumber" javaType="java.lang.String"/>
     <result column="bin_phone" property="binPhone" javaType="java.lang.String"/>
-    <result column="bin_pwd" property="binPwd" javaType="java.lang.Integer"/>
+
+    <result column="bin_pwd" property="binPwd" javaType="java.lang.String"/>
     <result column="bin_account" property="binAccount" javaType="java.lang.String"/>
     <result column="bin_acc_num" property="binAccNum" javaType="java.lang.String"/>
+
     <result column="bin_time" property="binTime" javaType="java.util.Date"/>
-    <result column="bin_unlink_time" property="binUnlinkTime" javaType="java.lang.String"/>
+    <result column="bin_unlink_time" property="binUnlinkTime" javaType="java.util.Date"/>
     <result column="bin_info" property="binInfo" javaType="java.lang.String"/>
 
   </resultMap>
   <sql id="Base_Column_List" >
-    bin_id, bin_categroy, bin_number, bin_phone, bin_pwd, bin_account, bin_acc_num, bin_time, 
-    bin_unlink_time, bin_info
+    bin_id, user_id, bin_categroy, bin_number, bin_phone, bin_pwd, bin_account, bin_acc_num, 
+    bin_time, bin_unlink_time, bin_info
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -54,28 +62,33 @@
   </select>
   <select id="list" resultMap="row"
           parameterType="com.day.eurekaprovider.ren.model.Binding">
-
-
+    select
+    <include refid="Base_Column_List" />
+    from binding
+    where 1=1
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from binding
     where bin_id = #{binId,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.day.eurekaprovider.ren.model.Binding" >
-    insert into binding (bin_id, bin_categroy, bin_number, 
-      bin_phone, bin_pwd, bin_account, 
-      bin_acc_num, bin_time, bin_unlink_time, 
-      bin_info)
-    values (#{binId,jdbcType=INTEGER}, #{binCategroy,jdbcType=VARCHAR}, #{binNumber,jdbcType=VARCHAR}, 
-      #{binPhone,jdbcType=VARCHAR}, #{binPwd,jdbcType=VARCHAR}, #{binAccount,jdbcType=VARCHAR}, 
-      #{binAccNum,jdbcType=INTEGER}, #{binTime,jdbcType=TIMESTAMP}, #{binUnlinkTime,jdbcType=TIMESTAMP}, 
-      #{binInfo,jdbcType=VARCHAR})
+    insert into binding (bin_id, user_id, bin_categroy, 
+      bin_number, bin_phone, bin_pwd, 
+      bin_account, bin_acc_num, bin_time, 
+      bin_unlink_time, bin_info)
+    values (#{binId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{binCategroy,jdbcType=VARCHAR}, 
+      #{binNumber,jdbcType=VARCHAR}, #{binPhone,jdbcType=VARCHAR}, #{binPwd,jdbcType=VARCHAR}, 
+      #{binAccount,jdbcType=VARCHAR}, #{binAccNum,jdbcType=INTEGER}, #{binTime,jdbcType=TIMESTAMP}, 
+      #{binUnlinkTime,jdbcType=TIMESTAMP}, #{binInfo,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.day.eurekaprovider.ren.model.Binding" >
     insert into binding
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="binId != null" >
         bin_id,
+      </if>
+      <if test="userId != null" >
+        user_id,
       </if>
       <if test="binCategroy != null" >
         bin_categroy,
@@ -109,6 +122,9 @@
       <if test="binId != null" >
         #{binId,jdbcType=INTEGER},
       </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
       <if test="binCategroy != null" >
         #{binCategroy,jdbcType=VARCHAR},
       </if>
@@ -141,6 +157,9 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.day.eurekaprovider.ren.model.Binding" >
     update binding
     <set >
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
       <if test="binCategroy != null" >
         bin_categroy = #{binCategroy,jdbcType=VARCHAR},
       </if>
@@ -173,7 +192,8 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.day.eurekaprovider.ren.model.Binding" >
     update binding
-    set bin_categroy = #{binCategroy,jdbcType=VARCHAR},
+    set user_id = #{userId,jdbcType=INTEGER},
+      bin_categroy = #{binCategroy,jdbcType=VARCHAR},
       bin_number = #{binNumber,jdbcType=VARCHAR},
       bin_phone = #{binPhone,jdbcType=VARCHAR},
       bin_pwd = #{binPwd,jdbcType=VARCHAR},
@@ -184,6 +204,4 @@
       bin_info = #{binInfo,jdbcType=VARCHAR}
     where bin_id = #{binId,jdbcType=INTEGER}
   </update>
-
-
 </mapper>

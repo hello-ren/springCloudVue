@@ -1,5 +1,6 @@
 package com.day.eurekaprovider.ren.service.imp;
 
+import com.day.eurekaprovider.base.util.PageBean;
 import com.day.eurekaprovider.ren.mapper.NoticeMapper;
 import com.day.eurekaprovider.ren.model.Notice;
 import com.day.eurekaprovider.ren.service.INoticeService;
@@ -35,7 +36,7 @@ public class INoticeServiceImpl implements INoticeService {
     }
 
     @Override
-    public List<Notice> list(Notice notice) {
+    public List<Notice> list(Notice notice, PageBean pageBean) {
         return noticeMapper.listNotice(notice);
     }
 }

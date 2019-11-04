@@ -1,5 +1,6 @@
 package com.day.eurekaprovider.ren.service;
 
+import com.day.eurekaprovider.base.util.PageBean;
 import com.day.eurekaprovider.ren.model.Notice;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,6 +15,6 @@ public interface INoticeService {
     public Notice one(Notice notice);
 
     @Transactional(readOnly = true)
-    public List<Notice> list(Notice notice);
+    public List<Notice> list(Notice notice, PageBean pageBean);
 
 }
